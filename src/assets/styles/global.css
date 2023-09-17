@@ -1,0 +1,26 @@
+/* Global Styling */
+:root{
+    
+    --border: none;
+    /* --border: 1px dotted grey; */
+}
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Jumper';
+    background: var(--background-main);
+    
+}
+.anim-hidden{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.mainPage .anim-hide{
+    opacity: 0;
+    transition: all 0.3s ease-in-out; 
+    z-index: 0;
+}
+.testBorder{
+    border: 1px dotted grey;
+}

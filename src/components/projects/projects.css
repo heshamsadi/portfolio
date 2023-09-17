@@ -1,0 +1,5 @@
+.mainProjects{
+    width: 100%;
+    height: calc(100vh - 10%);
+    display: grid;
+}

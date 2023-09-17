@@ -1,0 +1,72 @@
+.scrollAreaDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+}
+.scroll-up, .scroll-down{
+    cursor: pointer;
+    height: 8%;
+    width: 100%;
+    border: var(--border);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.scroll-up{
+    top: 0;
+    cursor: url('../../assets/images/arrowUp.png'), auto;
+    justify-content: start;
+    padding-top: 15px;
+}
+.scroll-up .sectionArrow{
+    transform: rotate(180deg);
+
+}
+.scroll-down{
+    bottom: 0;
+    cursor: url('../../assets/images/arrowDown.png'), auto;
+    justify-content: end;
+    padding-bottom: 15px;
+    
+}
+.scroll-down .sectionArrow{
+    animation: fade 2s ease-in-out infinite;
+}
+
+.scrollText{
+    margin: 0;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+
+.sectionArrow{
+    width: 40px;
+    
+}
+
+
+
+
+/* Show and hide last arrow */
+.mainSection:first-of-type .scrollAreaDiv:first-of-type {
+    display: none;
+}
+.mainSection:last-of-type .scrollAreaDiv:last-of-type {
+    display: none;
+}
+/* Animations */
+@keyframes fade {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 0.5;
+    }
+}

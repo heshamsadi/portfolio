@@ -1,0 +1,30 @@
+:root{
+    --text-primary: #333333;
+    --background-main: rgb(240, 240, 240);
+    /* --background-main: white; */
+/* 
+    --text-primary: white;
+    --background-main: #333333; */
+
+}
+
+@font-face {
+    font-family: 'Jumper';
+    src: url('../fonts/JumperPERSONALUSEONLY-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Jumper';
+    src: url('../fonts/JumperPERSONALUSEONLY-Extra-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Jumper';
+    src: url('../fonts/JumperPERSONALUSEONLY-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+  }
