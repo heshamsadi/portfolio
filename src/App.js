@@ -39,6 +39,7 @@ function App() {
         navRef.current.classList.remove("anim-hide")
     }
 
+    //scroll animation
     SecRefs.forEach((el,i)=>{
       console.log("i:"+i+", currentIndex:"+currentIndex)
       if(currentIndex != i){
