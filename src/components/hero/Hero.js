@@ -10,7 +10,6 @@ function Hero(props){
   
     return (<>
         <div className="hero">
-
           <div className="heroLeft">
             <h1 className="heroName">Hicham ESSAIDI</h1>
             <h3 className="heroTitle">Front End Developer</h3>

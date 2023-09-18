@@ -7,6 +7,7 @@
     overflow: hidden;
     position: relative;
     border: var(--border);
+
     
 
 }
@@ -26,4 +27,12 @@
     font-size: 2.3em;
     letter-spacing: 2px;
     margin: 0;
+}
+
+.sectionMain .divider:nth-last-of-type(2) {
+    top: auto; /* Reset the top property */
+    bottom: 0;
+    left: 0;
+    transform: rotateX(180deg) rotateY(180deg);
+
 }
