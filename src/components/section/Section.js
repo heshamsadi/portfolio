@@ -9,7 +9,6 @@ function Section(props, ref){
     return (<>
         <section className="mainSection" ref={ref}>
             <div className="sectionMain">
-
                 <ScrollArea scroll={props.up} dir="up"/>
                 <Divider/>
                 <div className="sectionContent">

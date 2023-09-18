@@ -4,7 +4,7 @@ import './projects.css'
 
 function Projects(){
     return(<>
-        <div className='mainProjects testBorder'>
+        <div className='mainProjects'>
             <Project/>
         </div>
     </>)

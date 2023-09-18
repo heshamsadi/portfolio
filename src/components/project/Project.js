@@ -1,6 +1,6 @@
 function Project(){
     return (<>
-        <div className="projectContainer testBorder">
+        <div className="projectContainer">
             
         </div>
     </>)

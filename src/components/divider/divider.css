@@ -13,7 +13,7 @@
   .divider svg {
     position: relative;
     display: block;
-    width: calc(150% + 1.3px);
+    width: 140%;
     height: 70px;
   }
   
@@ -21,3 +21,10 @@
     fill: #262626;
   }
   
+.divider:nth-last-of-type(2) {
+    top: auto; /* Reset the top property */
+    bottom: 0px;
+    left: 0;
+    transform: rotateX(180deg) rotateY(180deg);
+
+}
