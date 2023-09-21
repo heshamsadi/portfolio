@@ -25,6 +25,25 @@ function Hero(props){
               <button className="heroBtn">Download CV</button>
               <button className="heroBtn">Contact</button>
             </div>
+            <div className='heroIconsContainer'>
+        <a href="https://github.com/heshamsadi/" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/hicham-essaidi-840b11288/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        
+
+
+        
+        <a href="mailto:hichamessaidi74@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+        
+
+            </div>
+
           </div>
           <div className="heroRight">
             <div className='heroImageContainer'>
