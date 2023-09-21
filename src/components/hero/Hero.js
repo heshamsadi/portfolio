@@ -59,7 +59,13 @@ function Hero(props){
 
              <img src={ProfilePic} className="heroImage" alt="profileImage"/>
             </div>
-            
+            <div className='heroSkillsIconsContainer'>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-shopify"></i>
+            </div>
           </div>
           
         </div>

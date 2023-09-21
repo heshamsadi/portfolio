@@ -9,7 +9,7 @@ import Nav from "./components/nav/Nav";
 
 
 function App() {
-  const SecRefs = [useRef(), useRef(), useRef()];
+  const SecRefs = [useRef(), useRef(), useRef(), useRef()];
   const navRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     //nav animation
-    if(currentIndex != 0 ){
+    if(currentIndex !== 0 ){
       navRef.current.classList.add("anim-hide")
     }else{
         navRef.current.classList.remove("anim-hide")
@@ -42,7 +42,7 @@ function App() {
     //scroll animation
     SecRefs.forEach((el,i)=>{
       console.log("i:"+i+", currentIndex:"+currentIndex)
-      if(currentIndex != i){
+      if(currentIndex !== i){
         SecRefs[i].current.classList.add("anim-hidden")
       }else{
         SecRefs[i].current.classList.remove("anim-hidden")
@@ -62,8 +62,9 @@ function App() {
       <div className="mainPage">
         <Nav ref={navRef}/>
         <Section content={<Hero />} ref={SecRefs[0]} down={() => scroll(1)} up={() => scroll(-1)} />
-        <Section content={<Projects />} title="PROJECTS" ref={SecRefs[1]} down={() => scroll(1)} up={() => scroll(-1)} />
-        <Section content={<AboutMe />} title="ABOUT ME" ref={SecRefs[2]} down={() => scroll(1)} up={() => scroll(-1)} />
+        <Section content={<Skills />} title="SKILLS" bg="dark" ref={SecRefs[1]} down={() => scroll(1)} up={() => scroll(-1)} />
+        <Section content={<Projects />} title="PROJECTS" ref={SecRefs[2]} down={() => scroll(1)} up={() => scroll(-1)} />
+        <Section content={<AboutMe />} title="ABOUT ME" ref={SecRefs[3]} down={() => scroll(1)} up={() => scroll(-1)} />
         
       </div>
     </>

@@ -167,6 +167,15 @@
   }
 
 
+.heroSkillsIconsContainer{
+  position: absolute;
+}
+.heroSkillsIconsContainer i{
+  /* position: absolute; */
+  font-size: 3em;
+  bottom: -100%;
+}
+  
 
 
 
